@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTV</title>
+    <!-- local css file in public directory -->
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
+      <main>
+        <h1> Top Shows</h1>
+            <% shows.forEach((tv) => { %>
+                <div>
+                    <h3><%= tv.showname %></h3>
+                </div>
+            <% }); %>
+     </main>
+     <main>
+        <h1> Top Actors</h1>
+         <% actors.forEach((person) => { %>
+            <div>
+                <h3><%= person.actorname %></h3>
+            </div>
+          <% }); %>
+     </main>
+
+</body>
+</html>

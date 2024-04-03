@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>MyTV</title>
+   <!-- local css file in public directory -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <nav>
+       <a href="/">Home</a>
+   </nav>
+   <main>
+       <h1>Add TV Show</h1>
+       <div class="myadd">
+         <form action="/create" method="POST">
+            <p>TV show: <input type="text" name="fieldTitle"> </p>
+            <p>TV image URI: <input type="text" name="fieldImg"> </p>
+            <p><textarea name="fieldDescr"></textarea></p>
+            <p><input type="submit" value="ADD"></p>
+         </form>
+       </div>
+   </main>
+</body>
+</html>
